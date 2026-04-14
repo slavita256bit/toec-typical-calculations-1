@@ -1,0 +1,33 @@
+$$
+\text{E} = \begin{pmatrix} 0 \\[1.0em] 500 \\[1.0em] 0 \\[1.0em] 500 \\[1.0em] 0 \\[1.0em] 0 \\[1.0em] 0 \end{pmatrix} \quad
+\text{R} = \begin{pmatrix} 230 \\[1.0em] 470 \\[1.0em] 160 \\[1.0em] 570 \\[1.0em] 310 \\[1.0em] 190 \\[1.0em] 550 \end{pmatrix} \quad
+\text{J} = \begin{pmatrix} 0 \\[1.0em] 0 \\[1.0em] 0 \\[1.0em] 3 \\[1.0em] 0 \\[1.0em] 0 \\[1.0em] 9 \end{pmatrix} \quad
+\begin{matrix}
+\text{RD} := \text{diag}(\text{R}) \\[3.0em]
+\text{B} := \begin{pmatrix} 1 & 0 & 0 & 0 & 1 & 1 & 1 \\[1.0em] 0 & 1 & 1 & 1 & 0 & 0 & -1 \end{pmatrix}
+\end{matrix}
+$$
+
+$$
+\text{Ik} := (\text{B} \cdot \text{RD} \cdot \text{B}^{\text{T}})^{-1} \cdot (\text{B} \cdot \text{E} + \text{B} \cdot \text{RD} \cdot \text{J})
+$$
+
+$$
+\text{Ik}^{\text{T}} = \begin{pmatrix} 3.835 & -0.075 \end{pmatrix}
+$$
+
+$$
+\text{I} := \text{B}^{\text{T}} \cdot \text{Ik}
+$$
+
+$$
+\text{I}^{\text{T}} = \begin{pmatrix} 3.835 & -0.075 & -0.075 & -0.075 & 3.835 & 3.835 & 3.910 \end{pmatrix}
+$$
+
+$$
+\text{IR} := \text{I} - \text{J}
+$$
+
+$$
+\text{IR}^{\text{T}} = \begin{pmatrix} 3.835 & -0.075 & -0.075 & -3.075 & 3.835 & 3.835 & -5.090 \end{pmatrix}
+$$

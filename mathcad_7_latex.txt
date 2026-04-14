@@ -1,0 +1,28 @@
+$$
+\text{A1} := \begin{pmatrix}
+-1 & 1 & 0 & 0 & 0 & 0 & 1 \\[1.0em]
+0 & -1 & 1 & 0 & 0 & 0 & 0 \\[1.0em]
+1 & 0 & 0 & 0 & 0 & -1 & 0 \\[1.0em]
+0 & 0 & 0 & 0 & -1 & 1 & 0 \\[1.0em]
+0 & 0 & -1 & 1 & 0 & 0 & 0 \\[1.0em]
+\text{R1} & 0 & 0 & 0 & \text{R5} & \text{R6} & \text{R7} \\[1.0em]
+0 & \text{R2} & \text{R3} & \text{R4} & 0 & 0 & -\text{R7}
+\end{pmatrix} \quad
+\text{B1} := \begin{pmatrix}
+-\text{J7} \\[1.0em]
+0 \\[1.0em]
+0 \\[1.0em]
+0 \\[1.0em]
+-\text{J4} \\[1.0em]
+0 \\[1.0em]
+\text{E2} + \text{E4}
+\end{pmatrix}
+$$
+
+$$
+\text{x} := \text{A1}^{-1} \cdot \text{B1}
+$$
+
+$$
+\text{x}^{\text{T}} = \begin{pmatrix} 3.835 & -0.075 & -0.075 & -3.075 & 3.835 & 3.835 & -5.090 \end{pmatrix}
+$$

@@ -1,0 +1,37 @@
+$$
+\text{A} := \begin{pmatrix}
+-1 & 1 & 0 & 0 & 0 & 0 & 1 \\[1.0em]
+0 & -1 & 1 & 0 & 0 & 0 & 0 \\[1.0em]
+1 & 0 & 0 & 0 & 0 & -1 & 0 \\[1.0em]
+0 & 0 & 0 & -1 & 1 & 0 & -1 \\[1.0em]
+0 & 0 & 0 & 0 & -1 & 1 & 0
+\end{pmatrix} \quad
+\begin{matrix}
+\text{RD} := \text{diag}(\text{R}) \\[1.5em]
+\text{G} := \frac{1}{\text{RD}}
+\end{matrix}
+$$
+
+$$
+\text{F} := (\text{A} \cdot \text{G} \cdot \text{A}^{\text{T}})^{-1} \cdot (-\text{A} \cdot \text{G} \cdot \text{E} - \text{A} \cdot \text{J})
+$$
+
+$$
+\text{F}^{\text{T}} = \begin{pmatrix} -547.25 & -12.00 & 334.80 & 2252.75 & 1063.90 \end{pmatrix}
+$$
+
+$$
+\text{U} := \text{A}^{\text{T}} \cdot \text{F}
+$$
+
+$$
+\text{U}^{\text{T}} = \begin{pmatrix} 882.05 & -535.25 & -12.00 & -2252.75 & 1188.85 & 729.10 & -2800.00 \end{pmatrix}
+$$
+
+$$
+\text{IR} := \text{G} \cdot (\text{U} + \text{E})
+$$
+
+$$
+\text{IR}^{\text{T}} = \begin{pmatrix} 3.835 & -0.075 & -0.075 & -3.075 & 3.835 & 3.835 & -5.090 \end{pmatrix}
+$$
